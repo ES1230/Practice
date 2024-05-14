@@ -8,20 +8,16 @@ public class Main {
 		int n = sc.nextInt();
 		int x = sc.nextInt();
 		
-		int arr[] = new int[n];
+		StringBuilder sb = new StringBuilder();
 		
-		for(int i = 0; i<arr.length; i++) {
-			arr[i] = sc.nextInt();
-		}
-		
-		sc.close();
-		
-		for(int i = 0; i<arr.length; i++) {
-			if(arr[i]<x) {
-				System.out.print(arr[i]+" ");
+		for(int i=0; i<n; i++) {
+			
+			int num = sc.nextInt();
+			if( num < x ) {
+				sb.append(num+" ");
 			}
 		}
-		
+		System.out.println(sb);
 	}
 }
 
