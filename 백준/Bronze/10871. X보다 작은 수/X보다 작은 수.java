@@ -14,9 +14,11 @@ public class Main {
 			arr[i] = sc.nextInt();
 		}
 		
+		sc.close();
+		
 		for(int i = 0; i<arr.length; i++) {
 			if(arr[i]<x) {
-				System.out.printf("%d ", arr[i]);
+				System.out.print(arr[i]+" ");
 			}
 		}
 		
